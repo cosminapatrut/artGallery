@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="140dp">
+
+    <ImageView
+        android:id="@+id/gallery_item_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/gallery_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gallery_item_grey"
+        android:gravity="center"
+        android:lines="1"
+        android:ellipsize="end"
+        android:padding="8dp"
+        android:textColor="@android:color/white"
+        tools:text="Plate 10 from 'La Tauromaquia': Charles V spearing a bull in the ring at Valladolid" />
+</RelativeLayout>

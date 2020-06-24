@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clickable="true">
+
+    <TextView
+        android:id="@+id/gallery_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="36sp"
+        tools:text="The Metropolitan Museum of Art" />
+
+    <TextView
+        android:id="@+id/gallery_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gallery_title"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textSize="22sp"
+        tools:text="New York" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/contact_map"
+        android:layout_below="@id/gallery_location"
+        android:paddingHorizontal="10dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/gallery_description_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Gallery description"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/gallery_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gallery_description_label"
+                android:layout_marginTop="5dp"
+                android:textSize="22dp"
+                android:textStyle="italic"
+                tools:text="Gallery description ......" />
+
+            <TextView
+                android:id="@+id/gallery_contact_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gallery_description"
+                android:layout_marginTop="30dp"
+                android:text="Contact"
+                android:textColor="@android:color/black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/gallery_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gallery_contact_label"
+                android:layout_marginTop="5dp"
+                android:textSize="22sp"
+                android:textStyle="italic"
+                tools:text="000 0000 0000" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <fragment
+        android:id="@+id/contact_map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

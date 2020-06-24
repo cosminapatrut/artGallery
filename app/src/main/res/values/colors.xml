@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#616161</color>
+    <color name="colorPrimaryDark">#3F3E40</color>
+    <color name="colorAccent">#013933</color>
+    <color name="grey">#606060</color>
+    <color name="gallery_item_grey">#60000000</color>
+</resources>
